@@ -197,6 +197,9 @@ public class AuthenticationManager
                 {
                     bestRet = ret;
                 }
+                if (ret == AuthenticationMethod.NO_EMAIL){
+                    return ret;
+                }
             }
         }
         return bestRet;
